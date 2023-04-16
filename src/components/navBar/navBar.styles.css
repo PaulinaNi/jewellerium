@@ -1,0 +1,16 @@
+header, 
+#navBar{
+ display: flex;
+ justify-content: space-between;
+ align-items: center ;
+}
+
+#navBar a {
+ padding-right: 1rem;
+ color: green;
+}
+
+#navBar a.active,
+#navBar a.active:visited{
+ color: red;
+}
