@@ -1,16 +1,31 @@
-header, 
-#navBar{
+.shopLogo {
+ font-family: 'Sedgwick Ave Display', cursive;
+ font-size: 2rem;
+}
+
+header {
+ text-align: center;
+}
+
+#navBar {
  display: flex;
- justify-content: space-between;
- align-items: center ;
+ justify-content: center;
+ align-items: center;
 }
 
 #navBar a {
- padding-right: 1rem;
- color: green;
+ font-size: 1.5rem;
+ padding: 0.25rem 1rem;
+ transition: text-shadow 0.3s ease-in-out, font-weight 0.2s ease-in-out;
+}
+
+#navBar a:hover {
+ text-shadow: 0 0 0.5em currentColor;
+ font-weight: 800;
 }
 
 #navBar a.active,
-#navBar a.active:visited{
- color: red;
+#navBar a.active:visited {
+ font-weight: 800;
+ border-bottom: 0.2rem solid currentColor;
 }

@@ -1,12 +1,12 @@
 import './navBar.styles.css'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 export default function NavBar() {
  const navLinkClassName = ({ isActive }) => isActive ? "active" : ""
 
  return (
   <header>
-   <p className='shopLogo' aria-label='shop logo'>Jewellerium</p>
+   <Link to='/' className='shopLogo' aria-label='shop logo'>Jewellerium</Link>
    <nav id='navBar'>
     <NavLink to='/shop'
      className={navLinkClassName}
