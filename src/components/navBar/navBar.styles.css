@@ -7,8 +7,21 @@ header {
  text-align: center;
 }
 
+
+.navigationHeading {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#navBar a{
+display: block;
+}
+
+
+
 /* hamburger styling */
-.ham {
+.hamburger {
  cursor: pointer;
  -webkit-tap-highlight-color: transparent;
  transition: transform 400ms;
@@ -18,57 +31,64 @@ header {
  user-select: none;
 }
 
-.hamRotate.active {
+.hamburgerRotate.active {
  transform: rotate(45deg);
-}
-
-.hamRotate180.active {
- transform: rotate(180deg);
 }
 
 .line {
  fill: none;
  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
- stroke: #000;
+ stroke: var(--main-text);
  stroke-width: 5.5;
  stroke-linecap: round;
 }
 
-.ham1 .top {
+.hamburger .top {
  stroke-dasharray: 40 139;
 }
 
-.ham1 .bottom {
+.hamburger .bottom {
  stroke-dasharray: 40 180;
 }
 
-.ham1.active .top {
+.hamburger.active .top {
  stroke-dashoffset: -98px;
 }
 
-.ham1.active .bottom {
+.hamburger.active .bottom {
  stroke-dashoffset: -138px;
 }
 
-#navBar {
- display: flex;
- justify-content: center;
- align-items: center;
+#desktopLinks{
+ display: none;
 }
 
-#navBar a {
- font-size: 1.5rem;
- padding: 0.25rem 1rem;
- transition: text-shadow 0.3s ease-in-out, font-weight 0.2s ease-in-out;
-}
+/* media query */
+@media (min-width: 768px) {
+ .hamburger {
+  display: none;
+ }
+ #desktopLinks{
+  display: block;
+ }
 
-#navBar a:hover {
- text-shadow: 0 0 0.5em currentColor;
- font-weight: 800;
-}
+ #desktopLinks a {
+  font-size: 1.5rem;
+  padding: 0.25rem 1rem;
+  transition: text-shadow 0.3s ease-in-out, font-weight 0.2s ease-in-out;
+ }
 
-#navBar a.active,
-#navBar a.active:visited {
- font-weight: 800;
- border-bottom: 0.2rem solid currentColor;
+ #desktopLinks a{
+  display: inline-block;
+  }
+
+ #desktopLinks a:hover {
+  text-shadow: 0 0 0.5em currentColor;
+  font-weight: 800;
+ }
+
+ #desktopLinks a.active {
+  font-weight: 800;
+  border-bottom: 0.2rem solid currentColor;
+ }
 }
