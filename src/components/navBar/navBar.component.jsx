@@ -2,6 +2,9 @@ import './navBar.styles.css'
 import { NavLink, Link } from 'react-router-dom'
 import { useState } from 'react'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
+
 export default function NavBar() {
 
   //state to control opening and closing hamburger menu for mobile
@@ -26,6 +29,7 @@ export default function NavBar() {
         <NavLink to='/contact'
           className={navLinkClassName}
         >Contact</NavLink>
+        <FontAwesomeIcon icon={faCartShopping} size='lg' style={{ color: "#507028", padding: '0 0.5rem' }} />
       </nav>
     )
   }
@@ -38,7 +42,7 @@ export default function NavBar() {
         <svg
           className={isHamburgerMenuOpen ? "hamburger hamburgerRotate active" : "hamburger hamburgerRotate"}
           viewBox="0 0 100 100"
-          width="80"
+          width="70"
           onClick={handleHamburgerMenu}
         >
           <path
@@ -51,6 +55,7 @@ export default function NavBar() {
             className="line bottom"
             d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
         </svg>
+
       </div>
       {isHamburgerMenuOpen && <NavLinks navID='navBar' />}
       {<NavLinks navID='desktopLinks' />}

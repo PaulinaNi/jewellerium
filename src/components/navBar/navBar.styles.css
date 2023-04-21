@@ -1,6 +1,7 @@
 .shopLogo {
  font-family: 'Sedgwick Ave Display', cursive;
  font-size: 2rem;
+ padding-right: 1rem;
 }
 
 header {
@@ -14,10 +15,10 @@ header {
  align-items: center;
 }
 
-#navBar a{
-display: block;
+#navBar a {
+ display: block;
+ font-size: 1.5rem;
 }
-
 
 
 /* hamburger styling */
@@ -59,7 +60,7 @@ display: block;
  stroke-dashoffset: -138px;
 }
 
-#desktopLinks{
+#desktopLinks {
  display: none;
 }
 
@@ -68,7 +69,8 @@ display: block;
  .hamburger {
   display: none;
  }
- #desktopLinks{
+
+ #desktopLinks {
   display: block;
  }
 
@@ -78,9 +80,9 @@ display: block;
   transition: text-shadow 0.3s ease-in-out, font-weight 0.2s ease-in-out;
  }
 
- #desktopLinks a{
+ #desktopLinks a {
   display: inline-block;
-  }
+ }
 
  #desktopLinks a:hover {
   text-shadow: 0 0 0.5em currentColor;
