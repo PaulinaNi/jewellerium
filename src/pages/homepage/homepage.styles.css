@@ -1,0 +1,16 @@
+.hero {
+ width: 100%;
+ padding: 30vh 0 30vh 1rem;
+ background-image: url(../../assets/heroBackground.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.hero h1,
+.hero h2 {
+ margin: 0;
+}
+
+.hero h2 {
+ font-size: 1rem;
+}
