@@ -1,16 +1,53 @@
 .hero {
  width: 100%;
- padding: 30vh 0 30vh 1rem;
+ padding: 10vh 0 50vh 1rem;
  background-image: url(../../assets/heroBackground.jpg);
  background-repeat: no-repeat;
  background-size: cover;
+ background-position: bottom right 10%;
+ color: var(--main);
+ background-color: var(--main-text);
 }
 
 .hero h1,
 .hero h2 {
  margin: 0;
 }
-
+.hero h1{
+ font-size: 1.5rem;
+ font-family: 'Sedgwick Ave Display', cursive;
+}
 .hero h2 {
  font-size: 1rem;
+ padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+ .hero {
+  padding: 30vh 0 30vh 1rem;
+  color: var(--main-text);
+  background-color: var(--main);
+  background-position: bottom right;
+ }
+}
+@media (min-width: 960px) {
+ .hero h1{
+  font-size: 2rem;
+ }
+ .hero h2 {
+  font-size: 1.5rem;
+ }
+ .hero{
+  padding-left: 3rem;
+ }
+} 
+
+@media (max-width: 400px) {
+ .hero h1,
+ .hero h2 {
+  text-align: center;
+ }
+ .hero{
+  padding: 10vh 0 50vh 0;
+ }
 }

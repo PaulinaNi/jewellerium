@@ -1,0 +1,31 @@
+.button {
+ font-size: inherit;
+ padding: 0.5em 1em;
+ border-radius: 0.5em;
+ cursor: pointer;
+ border: none;
+ transition: all 0.5s ease-in-out;
+}
+
+.button.light {
+ background-color: var(--main);
+ color: var(--main-text);
+}
+
+.button.dark {
+ background-color: var(--main-text);
+ color: var(--main);
+}
+
+/* hoover effect */
+
+.button:hover {
+ text-shadow: 0 0 0.5em currentColor;
+}
+
+.button.light:hover {
+ background-color: #CAEFD1;
+}
+.button.dark:hover {
+ background-color: #5d832f;
+}
