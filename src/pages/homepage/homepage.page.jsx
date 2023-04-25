@@ -10,11 +10,11 @@ export default function Homepage() {
    <div className='hero'>
     <h1>Beautiful & Statement Jewellery</h1>
     <h2>- designed and handmade in London -</h2>
-    <Button 
-    buttonFunction='link'
-    text='Shop Now'
-    toWhere='/shop'
-    color='dark'
+    <Button
+     buttonFunction='link'
+     text='Shop Now'
+     toWhere='/shop'
+     color='dark'
     />
    </div>
   </section>

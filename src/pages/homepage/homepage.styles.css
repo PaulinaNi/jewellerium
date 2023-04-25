@@ -13,10 +13,12 @@
 .hero h2 {
  margin: 0;
 }
-.hero h1{
+
+.hero h1 {
  font-size: 1.5rem;
  font-family: 'Sedgwick Ave Display', cursive;
 }
+
 .hero h2 {
  font-size: 1rem;
  padding-bottom: 1rem;
@@ -30,24 +32,29 @@
   background-position: bottom right;
  }
 }
+
 @media (min-width: 960px) {
- .hero h1{
+ .hero h1 {
   font-size: 2rem;
  }
+
  .hero h2 {
   font-size: 1.5rem;
  }
- .hero{
+
+ .hero {
   padding-left: 3rem;
  }
-} 
+}
 
 @media (max-width: 400px) {
+
  .hero h1,
  .hero h2 {
   text-align: center;
  }
- .hero{
+
+ .hero {
   padding: 10vh 0 50vh 0;
  }
 }

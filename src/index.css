@@ -19,14 +19,15 @@
   /* colours */
   --main: #FFFDFD;
   --main-text: #507028;
-  --main-accent-blue: #CAEFD1;
+  --main-accent-green: #b4dabb;
   --main-accent-pink: #FDE0D9;
 }
 
 * {
   box-sizing: border-box;
 }
-body{
+
+body {
   margin: 0;
 }
 
