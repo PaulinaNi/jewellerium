@@ -1,0 +1,32 @@
+.productPage {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.productPage-Image {
+ width: 80%;
+}
+
+.productPage-ItemInfoContainer {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+ .productPage {
+  flex-direction: row;
+  justify-content: space-around;
+ }
+
+ .productPage-Image {
+  width: 40%;
+ }
+
+ .productPage-ItemInfoContainer {
+  width: 50%;
+  align-items: flex-start;
+ }
+}
