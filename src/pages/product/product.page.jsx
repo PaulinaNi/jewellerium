@@ -1,8 +1,17 @@
 import './product.styles.css'
+//react
+import { useState } from 'react'
 //component import
 import Button from '../../components/button/button.component'
 
 export default function Product(props) {
+ const [productQuantity, setProductQuantity] = useState(1)
+
+ const increaseProductQuantity = () => setProductQuantity(prevState => prevState + 1)
+ const decreaseProductQuantity = () => {
+  setProductQuantity(prevState => prevState > 1 ? prevState - 1 : 1)
+ }
+
  return (
   <section className='productPage'>
    <img className='productPage-Image' src="https://placehold.co/300x500" alt="product photo" />
@@ -18,13 +27,16 @@ export default function Product(props) {
      Corporis ratione provident ipsum illo sunt quo accusamus non quia placeat odit quod, dolorem vero dignissimos dolor suscipit! Illo quae, tempore ratione animi sunt ipsum? Ipsa consequatur nobis iure cupiditate.
     </p>
     <div className='productPage-AddToCart'>
-     <span>-</span>
-     <span>1</span>
-     <span>+</span>
+
+     <span
+      className='productPage-Quantity minus' onClick={decreaseProductQuantity}>-</span>
+     <span className='productPage-Quantity display'>{productQuantity}</span>
+     <span className='productPage-Quantity plus' onClick={increaseProductQuantity}>+</span>
+
      <Button
       buttonFunction='action'
       text='Add to cart'
-      func={() => console.log('added to cart')}
+      func={() => console.log(`${productQuantity} x added to cart`)}
       color='dark'
      />
     </div>
